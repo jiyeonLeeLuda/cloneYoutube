@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+button:active {
+  opacity: 0.7;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.fa-youtube {
+  color: red;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.header__title,
+.fa-search,
+header .fa-ellipsis-v {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.header__title {
+  font-weight: bold;
+}
+.header__input {
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+header .fa-ellipsis-v {
+  margin: 0 auto 0 1rem;
+}
+.video {
+  /* position: sticky;
+  top: 0; */
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+.video-info {
+  display: flex;
+  margin-top: 1rem;
+}
+.metadata {
+  width: 100%;
+  flex: 50%;
+}
+.tags {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  color: royalblue;
+}
+.view {
+  color: grey;
+}
+.actions {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.fa-thumbs-up,
+.fa-thumbs-down,
+.fa-share,
+.fa-plus,
+.fa-font-awesome-flag {
+  font-size: 1.5rem;
+  margin-bottom: 0.4em;
+}
+.fa-thumbs-up {
+  color: royalblue;
+}
+.action {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+.chanal {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.chanal__metadata {
+  display: flex;
+}
+.chanal__metadata__img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.chanal__metadata__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+.subscribeBtn {
+  color: red;
+  margin-right: 1rem;
+}
+.next {
+  width: 100%;
+
+  flex: 50%;
+}
+.next__title {
+  color: grey;
+}
+.next__video {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.next__video__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.next__video__info__title {
+}
+.next__video__info__chanal,
+.next__video__info__views {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.next__video__more .fa-ellipsis-v {
+  padding: 1rem;
+}
