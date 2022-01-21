@@ -48,6 +48,9 @@ header .fa-ellipsis-v {
   width: 100%;
   background-color: black;
 }
+.video__player {
+  width: 100%;
+}
 .video-info {
   display: flex;
   margin-top: 1rem;
@@ -147,4 +150,10 @@ header .fa-ellipsis-v {
 
 .next__video__more .fa-ellipsis-v {
   padding: 1rem;
+}
+
+@media screen and (max-width: 60rem) {
+  .video-info {
+    flex-direction: column;
+  }
 }
