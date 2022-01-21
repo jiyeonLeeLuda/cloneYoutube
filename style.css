@@ -42,28 +42,47 @@ header .fa-ellipsis-v {
   margin: 0 auto 0 1rem;
 }
 .video {
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   text-align: center;
   width: 100%;
   background-color: black;
 }
 .video__player {
   width: 100%;
+  height: 100%;
+  max-width: 1000px;
 }
 .video-info {
   display: flex;
   margin-top: 1rem;
+  padding: 1rem;
 }
 .metadata {
   width: 100%;
   flex: 50%;
+  margin-right: 1rem;
 }
 .tags {
   display: flex;
   list-style: none;
   font-size: 1rem;
   color: royalblue;
+}
+.titleAndMorebtn {
+  display: flex;
+}
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.title__morebtn {
+  height: 100%;
+}
+.title__morebtn.show {
+  transform: rotate(180deg);
 }
 .view {
   color: grey;
@@ -74,15 +93,15 @@ header .fa-ellipsis-v {
   justify-content: space-around;
   margin: 1rem 0;
 }
-.fa-thumbs-up,
-.fa-thumbs-down,
-.fa-share,
-.fa-plus,
-.fa-font-awesome-flag {
+.actions .fa-thumbs-up,
+.actions .fa-thumbs-down,
+.actions .fa-share,
+.actions .fa-plus,
+.actions .fa-font-awesome-flag {
   font-size: 1.5rem;
   margin-bottom: 0.4em;
 }
-.fa-thumbs-up {
+.actions .fa-thumbs-up {
   color: royalblue;
 }
 .action {
@@ -97,21 +116,21 @@ header .fa-ellipsis-v {
   height: 1px;
   background-color: grey;
 }
-.chanal {
+.channel {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 }
-.chanal__metadata {
+.channel__metadata {
   display: flex;
 }
-.chanal__metadata__img {
+.channel__metadata__img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   margin-left: 1rem;
 }
-.chanal__metadata__info {
+.channel__metadata__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,24 +151,30 @@ header .fa-ellipsis-v {
 }
 .next__video {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
   margin-top: 1rem;
+}
+.next__video__img {
+  flex: 1 1 35%;
 }
 .next__video__info {
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  flex: 1 1 60%;
 }
 .next__video__info__title {
 }
-.next__video__info__chanal,
+.next__video__info__channel,
 .next__video__info__views {
   color: grey;
   font-size: 0.8rem;
 }
 
 .next__video__more .fa-ellipsis-v {
-  padding: 1rem;
+  height: 100%;
+  flex: 1 1 5%;
 }
 
 @media screen and (max-width: 60rem) {
