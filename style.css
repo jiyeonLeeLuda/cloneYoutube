@@ -1,3 +1,15 @@
+:root {
+  /* COLOR */
+  --color-ligt-grey: grey;
+  --color-blue: royalblue;
+  --color-red: red;
+  --color-white: white;
+  /* SIZE */
+  --padding: 1rem;
+  /* FONT SIZE*/
+  --font--midium: 1rem;
+  --font--smaill: 0.8rem;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,19 +27,19 @@ button:active {
 .header {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: var(--padding);
   background-color: black;
 }
 
 .fa-youtube {
-  color: red;
+  color: var(--color-red);
   margin-right: 0.5rem;
   font-size: 2rem;
 }
 .header__title,
 .fa-search,
 header .fa-ellipsis-v {
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   margin-left: 1rem;
 }
@@ -57,7 +69,7 @@ header .fa-ellipsis-v {
 .video-info {
   display: flex;
   margin-top: 1rem;
-  padding: 1rem;
+  padding: var(--padding);
 }
 .metadata {
   width: 100%;
@@ -67,8 +79,8 @@ header .fa-ellipsis-v {
 .tags {
   display: flex;
   list-style: none;
-  font-size: 1rem;
-  color: royalblue;
+  font-size: var(--font--midium);
+  color: var(--color-blue);
 }
 .titleAndMorebtn {
   display: flex;
@@ -86,7 +98,7 @@ header .fa-ellipsis-v {
   transform: rotate(180deg);
 }
 .view {
-  color: grey;
+  color: var(--color-ligt-grey);
 }
 .actions {
   list-style: none;
@@ -103,10 +115,10 @@ header .fa-ellipsis-v {
   margin-bottom: 0.4em;
 }
 .actions .fa-thumbs-up {
-  color: royalblue;
+  color: var(--color-blue);
 }
 .action {
-  color: grey;
+  color: var(--color-ligt-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +127,7 @@ header .fa-ellipsis-v {
 .divider {
   width: 100%;
   height: 1px;
-  background-color: grey;
+  background-color: var(--color-ligt-grey);
 }
 .channel {
   display: flex;
@@ -139,7 +151,7 @@ header .fa-ellipsis-v {
   margin-left: 1rem;
 }
 .subscribeBtn {
-  color: red;
+  color: var(--color-red);
   margin-right: 1rem;
 }
 .next {
@@ -148,7 +160,7 @@ header .fa-ellipsis-v {
   flex: 50%;
 }
 .next__title {
-  color: grey;
+  color: var(--color-ligt-grey);
 }
 .next__video {
   display: flex;
@@ -169,8 +181,8 @@ header .fa-ellipsis-v {
 }
 .next__video__info__channel,
 .next__video__info__views {
-  color: grey;
-  font-size: 0.8rem;
+  color: var(--color-ligt-grey);
+  font-size: var(--font--smaill);
 }
 
 .next__video__more .fa-ellipsis-v {
